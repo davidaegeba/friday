@@ -6,7 +6,7 @@ require 'site_prism'
 Capybara.default_driver = :selenium
 Capybara.app_host = "http://www.google.co.uk"
 Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new app, browser: :firefox
+  Capybara::Selenium::Driver.new app, browser: :chrome
 end
 
 World(Capybara::DSL)

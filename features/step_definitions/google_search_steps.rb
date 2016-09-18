@@ -16,3 +16,7 @@ Then(/^I should be able to access the cucumber wiki page$/) do
   #test the h1 title is equal to Cucumber
   find('h1').text == 'Cucumber'
 end
+
+#And(/^I search for (.*)$/) do |search|
+ # @session.home_page.search_word.set eval(search)
+#end
